@@ -11,6 +11,19 @@ class Vector
     end
 
     def length
-       Math::sqrt(@x ** @x + @y ** @y)
+        Math::sqrt(@x ** @x + @y ** @y)
     end
+    
+    def add(v)
+        Vector.new(@x+v.x, @y+v.y)
+    end
+
+    def x
+        @x
+    end
+
+    def y
+        @y
+    end
+
 end
